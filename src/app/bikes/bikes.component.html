@@ -1,0 +1,11 @@
+<mat-card *ngFor="let bike of bikes">
+    <img mat-card-image [alt]="bike.name" [src]="bike.imageUrl">
+    <mat-card-title>{{bike.name}}</mat-card-title>
+    <mat-card-content class="secondary">
+        {{bike.description}}
+    </mat-card-content>
+    <mat-card-actions align="end">
+        <button mat-button color="primary">BEBEBE</button>
+        <button mat-button color="primary">WWZZZUUH</button>
+    </mat-card-actions>
+</mat-card>

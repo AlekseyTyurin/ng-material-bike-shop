@@ -1,0 +1,22 @@
+<mat-sidenav-container fullscreen>
+    <mat-sidenav #sidenav>
+        <mat-nav-list *shellNoRender>
+            <a mat-list-item *ngFor="let view of views">
+                <mat-icon mat-list-icon>{{view.icon}}</mat-icon>
+                <span mat-line>{{view.name}}</span>
+                <span mat-line>{{view.description}}</span>
+            </a>
+        </mat-nav-list>
+    </mat-sidenav>
+    <mat-toolbar color="primary">
+
+        <button mat-icon-button (click)="sidenav.open()">
+            <svg style="width: 24px;height: 24px" viewBox="0 0 24 24">
+                <path fill="currentColor" d="M3,6H21V8H3V6M3,11H21V13H3V11M3,16H21V18H3V16Z"/>
+            </svg>
+        </button>
+        Love Bike shop
+    </mat-toolbar>
+    <!--<router-outlet  *shellNoRender></router-outlet>-->
+    <app-bikes></app-bikes>
+</mat-sidenav-container>
